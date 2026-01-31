@@ -13,7 +13,7 @@ body {
   padding: 0 10px;
   justify-content: center;
   min-height: 100vh;
-  background: #e09f44;
+  background: rgb(210,225,240);
 }
 
 .container{
