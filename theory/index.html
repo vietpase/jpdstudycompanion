@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Theory</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="app">
+    <h1>THEORY</h1>
+
+    <div class="lesson-grid">
+      <button onclick="go('./lesson/jpd/jpd113.html')">JPD113</button>
+      <button onclick="go('./lesson/jpd/jpd123.html')">JPD123</button>
+    </div>
+  </div>
+
+  <!-- JS của bạn -->
+  <script src="./index.js"></script>
+
+  <!-- Local counter (nếu không để trong index.js) -->
+  <script>
+    const KEY = "demo_local_visits";
+    let visits = localStorage.getItem(KEY);
+    visits = visits ? parseInt(visits) + 1 : 1;
+    localStorage.setItem(KEY, visits);
+    document.getElementById("visitor-count").innerText = visits;
+  </script>
+</body>
+
+</html>

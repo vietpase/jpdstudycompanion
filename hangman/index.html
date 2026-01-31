@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts/question_list.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+
+    
+  </head>
+  <body>
+    <div class="game-modal">
+        <div class="content">
+            <img src="images/lost.gif" alt="gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b></b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class = "container">
+        <div class = "hangman-box">
+            <img src="images/hangman-0.svg" alt="hangman-img">
+            <h1>Hangman</h1>
+        </div>
+        <div class="game-box">
+            <h4 class="question">
+                Question: 
+                <b>What is your animal?</b>
+            </h4>
+            <h4 class="score">
+                Your Score:
+                <b>0</b>
+            </h4>
+            <div class="answer-buttons">
+            </div>
+            <div class="controls">
+                <button class="next-btn">Next</button>
+                <button class="give-up-btn">Give Up</button>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

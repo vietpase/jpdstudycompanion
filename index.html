@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JPD_Study_Companion</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="app">
+        <h1>THEORY</h1>
+
+        <div class="lesson-grid">
+            <button onclick="go('./theory/index.html')">THEORY</button>
+            <button onclick="go('./hangman/index.html')">HANGMAN</button>
+        </div>
+    </div>
+    <div class="counter">
+        👀 Lượt truy cập: <span id="visitor-count">...</span>
+    </div>
+
+    <!-- JS của bạn -->
+    <script src="./index.js"></script>
+
+    <!-- Local counter (nếu không để trong index.js) -->
+    <script>
+        const KEY = "demo_local_visits";
+        let visits = localStorage.getItem(KEY);
+        visits = visits ? parseInt(visits) + 1 : 1;
+        localStorage.setItem(KEY, visits);
+        document.getElementById("visitor-count").innerText = visits;
+    </script>
+
+    <!-- GoatCounter -->
+    <script data-goatcounter="https://anhviet45.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+
+</html>

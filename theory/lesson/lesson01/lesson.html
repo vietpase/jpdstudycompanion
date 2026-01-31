@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LESSON1</title>
+    <link rel="stylesheet" href="./lesson.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <h1>LESSON1</h1>
+
+      <div class="lesson-grid">
+        <button onclick="go('./vocab/vocab.html')">Vocabulary</button>
+        <button onclick="go('./grammar/grammar.html')">Grammar</button>
+        <button onclick="go('./kanji/kanji.html')">Kanji</button>
+      </div>
+      <a href="../jpd/jpd113.html">⬅ Return</a>
+    </div>
+
+    <script>
+      function go(path) {
+        window.location.href = path;
+      }
+    </script>
+  </body>
+</html>

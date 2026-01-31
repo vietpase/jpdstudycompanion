@@ -1,0 +1,84 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 30px;
+}
+
+/* TIÊU ĐỀ */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* BẢNG */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* TIÊU ĐỀ CỘT */
+th {
+  background: #2f80ed;
+  color: white;
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* Ô DỮ LIỆU */
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* STT */
+td:first-child {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* HÀNG CHẴN */
+tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+/* HOVER */
+tr:hover {
+  background: #eef4ff;
+}
+
+/* TÔ MÀU PHẦN QUAN TRỌNG */
+.jp {
+  color: #d6336c; /* tiếng Nhật */
+  font-weight: 500;
+}
+
+.vn {
+  color: #2b8a3e; /* tiếng Việt */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  table {
+    font-size: 13px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
