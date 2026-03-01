@@ -1,34 +1,35 @@
 <!doctype html>
 <html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Theory</title>
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Theory</title>
-  <link rel="stylesheet" href="index.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+  <body>
+    <div class="app">
+      <h1>THEORY</h1>
 
-<body>
-  <div class="app">
-    <h1>THEORY</h1>
+      <div class="lesson-grid">
+        <button onclick="go('./lesson/jpd/jpd113.html')">JPD113</button>
+        <button onclick="go('./lesson/jpd/jpd123.html')">JPD123</button>
+      </div>
 
-    <div class="lesson-grid">
-      <button onclick="go('./lesson/jpd/jpd113.html')">JPD113</button>
-      <button onclick="go('./lesson/jpd/jpd123.html')">JPD123</button>
+      <br /><br />
+      <a href="../index.html">⬅ Return</a>
     </div>
-  </div>
 
-  <!-- JS của bạn -->
-  <script src="./index.js"></script>
+    <!-- JS của bạn -->
+    <script src="./index.js"></script>
 
-  <!-- Local counter (nếu không để trong index.js) -->
-  <script>
-    const KEY = "demo_local_visits";
-    let visits = localStorage.getItem(KEY);
-    visits = visits ? parseInt(visits) + 1 : 1;
-    localStorage.setItem(KEY, visits);
-    document.getElementById("visitor-count").innerText = visits;
-  </script>
-</body>
-
+    <!-- Local counter (nếu không để trong index.js) -->
+    <script>
+      const KEY = "demo_local_visits";
+      let visits = localStorage.getItem(KEY);
+      visits = visits ? parseInt(visits) + 1 : 1;
+      localStorage.setItem(KEY, visits);
+      document.getElementById("visitor-count").innerText = visits;
+    </script>
+  </body>
 </html>

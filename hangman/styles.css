@@ -99,7 +99,6 @@ body {
   color: #222;
   font-weight: 600;
   font-size: 1rem;
-  text-transform: uppercase;
   width: 100%;
   border: 1px solid #222;
   padding: 10px;
@@ -136,7 +135,7 @@ body {
   font-size: 1rem;
   font-weight: 650;
   cursor: pointer;
-  width: 100px;
+  width: 150px;
   outline: none;
   border: none;
   border-radius: 4px;
@@ -185,18 +184,37 @@ body {
     color: #fff;
 }
 
+/* special look for return button */
+.game-box .return-btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  /* give a fixed width to match give-up button */
+  margin-top: 15px;
+  width: 150px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 650;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.game-box .return-btn:hover {
+  background-color: #2c80b4;
+}
+
 .controls {
     display: flex;
     justify-content: center; /* Căn giữa cả cụm */
     gap: 20px;              /* Khoảng cách giữa 2 nút */
     margin-top: 25px;
-    width: 100%;
 }
 
 /* Style chung cho cả 2 nút để chúng đều nhau */
 .controls button {
-    flex: 1;                /* Ép 2 nút chia đôi không gian bằng nhau */
-    max-width: 150px;       /* Giới hạn độ rộng tối đa để nút không quá dài */
+    width: 150px;           /* fixed width for both controls */
     padding: 12px 0;        /* Chiều cao đồng nhất */
     font-size: 1rem;
     font-weight: 700;
@@ -205,6 +223,22 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+/* Ensure specific control buttons have identical horizontal padding
+   and display so they render the same size (overrides other rules) */
+.controls button {
+  width: 150px;
+  padding: 10px 0;      /* same vertical padding, no extra horizontal padding */
+  display: inline-block; /* respect fixed width without stretching */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Positioning: keep Give Up on the left, and place Return/Next on the right slot
+   so when Return is hidden and Next is shown it appears in the same place. */
+.controls .give-up-btn { order: 2; }
+.controls .return-btn { order: 3; }
+.controls .next-btn   { order: 3; }
 
 .game-modal{
   position: fixed;

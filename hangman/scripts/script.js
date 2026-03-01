@@ -13,6 +13,8 @@ let currentQuestion;
 
 function resetGame() {
     nextButton.style.display = "none";
+    // ensure the return button is visible when a new question starts
+    if (returnBtn) returnBtn.style.display = "inline-block";
     currScore.innerText = `${score}`;
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
@@ -62,7 +64,9 @@ function selectAnswer(e) {
         Array.from(answerButtons.children).forEach(button => {
             button.disabled = true;
         });
-        nextButton.style.display = "block";
+        // hide the return button and show the next button in its place
+        if (returnBtn) returnBtn.style.display = "none";
+        nextButton.style.display = "inline-block";
     } else {
         selectedButton.classList.add("wrong");
         selectedButton.disabled = true;
@@ -110,5 +114,14 @@ if (giveUpBtn) {
 }
 
 playAgainBtn.addEventListener("click", startQuiz);
+
+// return to homepage button
+const returnBtn = document.querySelector(".return-btn");
+if (returnBtn) {
+    returnBtn.addEventListener("click", () => {
+        // navigate back to the root index page
+        window.location.href = "../index.html";
+    });
+}
 
 startQuiz();
