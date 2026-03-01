@@ -1,17 +1,31 @@
 <!doctype html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Grammar</title>
-    <link rel="stylesheet" href="./vocab.css" />
-  </head>
 
-  <body>
-    <div class="app">
-      <h1>Ongoing</h1>
-      <a href="../jpd/jpd123.html">⬅ Return</a>
+<head>
+  <meta charset="UTF-8" />
+  <title>LESSON6</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./lesson.css" />
+</head>
+
+<body>
+  <div class="app">
+    <h1>LESSON6</h1>
+
+    <div class="lesson-grid">
+      <button onclick="go('./vocab/vocab.html')">Vocabulary</button>
+      <button onclick="go('./grammar/grammar.html')">Grammar</button>
+      <button onclick="go('./kanji/kanji.html')">Kanji</button>
     </div>
 
-    <script src="./vocab.js"></script>
-  </body>
+    <a href="../jpd/jpd123.html">⬅ Return</a>
+  </div>
+
+  <script>
+    function go(path) {
+      window.location.href = path;
+    }
+  </script>
+</body>
+
 </html>

@@ -115,3 +115,44 @@ button:active {
 
   z-index: 1000;
 }
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .app {
+    width: 100%;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .lesson-grid {
+    grid-template-columns: 1fr; /* 1 cột thay vì 2 */
+    gap: 12px;
+  }
+
+  .lesson-grid button {
+    aspect-ratio: auto; /* bỏ hình vuông */
+    height: 70px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 14px;
+  }
+
+  .counter {
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}

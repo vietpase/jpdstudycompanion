@@ -106,3 +106,35 @@ a {
   font-weight: bold;
   color: #2f4f6f;
 }
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .app {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  /* 3 cột → 1 cột cho dễ bấm */
+  .lesson-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Bỏ dạng hình vuông */
+  .lesson-grid button {
+    aspect-ratio: auto;
+    height: 70px;
+    font-size: 15px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+}

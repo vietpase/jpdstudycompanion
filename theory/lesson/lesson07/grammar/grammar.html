@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ngữ pháp bài 7 - Full 3.4.1 - 3.4.14</title>
+  <style>
+    :root {
+      --primary: #0056b3;
+      --secondary: #e7f3ff;
+      --accent: #ff0000;
+      --text: #333;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f0f2f5;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Table Index */
+    .index-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      background: #fff;
+    }
+
+    .index-table td,
+    .index-table th {
+      border: 1px solid #000;
+      padding: 10px;
+      font-size: 0.95em;
+    }
+
+    .index-table th {
+      background: #f2f2f2;
+      text-align: center;
+    }
+
+    h2,
+    h3 {
+      color: #000;
+      border-left: 5px solid var(--primary);
+      padding-left: 15px;
+      margin-top: 40px;
+    }
+
+    .return-link {
+      font-size: 0.8em;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: normal;
+      margin-left: 10px;
+    }
+
+    .example-box {
+      background: var(--secondary);
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+      border-left: 4px solid var(--primary);
+    }
+
+    .red {
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .blue {
+      color: var(--primary);
+    }
+
+    .rule-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .rule-item {
+      border: 1px solid #333;
+      padding: 8px 15px;
+      background: #fff;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+
+    table.data-table td,
+    table.data-table th {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    ul li::before {
+      content: "- ";
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .index-table {
+        font-size: 0.8em;
+      }
+
+      .container {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2 id="index">Ngữ pháp bài 7 <a href="#" class="return-link">(click here to return menu)</a></h2>
+
+    <table class="index-table">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Ngữ pháp</th>
+          <th>Index</th>
+          <th>Ngữ pháp</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#341">3.4.1</a></td>
+          <td>N1 はN2にあります／います</td>
+          <td><a href="#348">3.4.8</a></td>
+          <td>NのVかた</td>
+        </tr>
+        <tr>
+          <td><a href="#342">3.4.2</a></td>
+          <td>N1 のN2</td>
+          <td><a href="#349">3.4.9</a></td>
+          <td>どれ</td>
+        </tr>
+        <tr>
+          <td><a href="#343">3.4.3</a></td>
+          <td>(N1に)N2 があります／います</td>
+          <td><a href="#3410">3.4.10</a></td>
+          <td>どのN</td>
+        </tr>
+        <tr>
+          <td><a href="#344">3.4.4</a></td>
+          <td>Phân chia nhóm động từ</td>
+          <td><a href="#3411">3.4.11</a></td>
+          <td>Vています</td>
+        </tr>
+        <tr>
+          <td><a href="#345">3.4.5</a></td>
+          <td>Cách chia động từ thể て</td>
+          <td><a href="#3412">3.4.12</a></td>
+          <td>Vましょうか</td>
+        </tr>
+        <tr>
+          <td><a href="#346">3.4.6</a></td>
+          <td>Vて ください</td>
+          <td><a href="#3413">3.4.13</a></td>
+          <td>だれが</td>
+        </tr>
+        <tr>
+          <td><a href="#347">3.4.7</a></td>
+          <td>N でV</td>
+          <td><a href="#3414">3.4.14</a></td>
+          <td>もう／まだ</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="341">
+      <h3>3.4.1. N1 はN2にあります／います <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <p>Ý nghĩa: N1 có/tồn tại ở N2</p>
+      <ul>
+        <li>N1: danh từ chỉ vật/con người | N2: danh từ chỉ vị trí, địa điểm</li>
+        <li><span class="red">あります</span>: dùng cho đối tượng <span class="red">không chuyển động được</span> (đồ vật,
+          cây cỏ...)</li>
+        <li><span class="red">います</span>: dùng cho đối tượng <span class="red">có thể chuyển động được</span> (con
+          người, con vật)</li>
+      </ul>
+      <div class="example-box">
+        ■ 東京ディズニーランドはちばけんにあります。<br>
+        ■ きむらさんはどこにいますか。→ がっこうにいます。
+      </div>
+    </div>
+
+    <div id="342">
+      <h3>3.4.2. N1 の N2 <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <ul>
+        <li>N1: danh từ chỉ vật, người, địa điểm</li>
+        <li>N2: danh từ chỉ vị trí (うえ、した、まえ、うしろ、みぎ、ひだり、なか、そot、となり、ちかく、あいだ)</li>
+      </ul>
+      <div class="example-box">
+        ■ ほんやはレストランの<span class="blue">前</span>にあります。<br>
+        ■ 私はこうえんの<span class="blue">なか</span>にいます。
+      </div>
+    </div>
+
+    <div id="343">
+      <h3>3.4.3. (N1 に)N2 があります／います <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <p>Ý nghĩa: Ở N1 có N2</p>
+      <div class="example-box">
+        ■ ゆうびんきょくのまえにポストがあります。<br>
+        ■ うちのなかにだれがいますか。→ だれもいません。
+      </div>
+    </div>
+
+    <div id="344">
+      <h3>3.4.4. Phân chia nhóm động từ <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <ul>
+        <li><b>Nhóm 1:</b> Âm kết thúc trước ます thuộc cột 「い」 (いきます, のみます)</li>
+        <li><b>Nhóm 2:</b> Âm kết thúc trước ます thuộc cột 「え」 (たべます, ねます)
+          <br><i>Đặc biệt:</i> おきます, みます, います, かります...
+        </li>
+        <li><b>Nhóm 3:</b> きます, します, N します (べんきょうします)</li>
+      </ul>
+    </div>
+
+    <div id="345">
+      <h3>3.4.5. Cách chia động từ thể て <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <p><b>Nhóm 1:</b></p>
+      <div class="rule-group">
+        <div class="rule-item">い、ち、り → って</div>
+        <div class="rule-item">み、に、び → んで</div>
+        <div class="rule-item">き → いて | ぎ → いで</div>
+        <div class="rule-item">し → して</div>
+      </div>
+      <p><i>Đặc biệt:</i> <span class="red">いきます → いって</span></p>
+      <p><b>Nhóm 2 & 3:</b> Bỏ ます thêm て (たべます → たべて)</p>
+    </div>
+
+    <div id="346">
+      <h3>3.4.6. V て ください: Hãy làm V <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <p>Dùng để nhờ vả, sai khiến, khuyên nhủ lịch sự.</p>
+      <div class="example-box">■ ここに名前を書いてください。</div>
+    </div>
+
+    <div id="347">
+      <h3>3.4.7. N で V: Làm V bằng N <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <p>N: danh từ chỉ công cụ, phương tiện.</p>
+      <div class="example-box">■ はしでごはんをたべます。</div>
+    </div>
+
+    <div id="348">
+      <h3>3.4.8. N の Vますかた: Cách ~ <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <div class="example-box">■ やさいのきりかた (Cách cắt rau)</div>
+    </div>
+
+    <div id="349">
+      <h3>3.4.9. どれ & 3.4.10. どの N <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <table class="data-table">
+        <tr>
+          <th>Nhóm</th>
+          <th>(こ)</th>
+          <th>(そ)</th>
+          <th>(あ)</th>
+          <th>(ど)</th>
+        </tr>
+        <tr>
+          <td>Đồ vật</td>
+          <td>これ</td>
+          <td>それ</td>
+          <td>あれ</td>
+          <td><b>どれ</b></td>
+        </tr>
+        <tr>
+          <td>Người+Vật</td>
+          <td>この</td>
+          <td>その</td>
+          <td>あの</td>
+          <td><b>どの</b></td>
+        </tr>
+        <tr>
+          <td>Địa điểm</td>
+          <td>ここ</td>
+          <td>そこ</td>
+          <td>あそこ</td>
+          <td>どこ</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="3411">
+      <h3>3.4.11. V ています: Đang làm V <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <div class="example-box">■ ギターを ひいて います。 (Tôi đang chơi guitar)</div>
+    </div>
+
+    <div id="3412">
+      <h3>3.4.12. V ましょうか: Đề nghị làm gì cho ai <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <div class="example-box">■ まどを しめましょうか。(Để tôi đóng cửa sổ cho nhé)</div>
+    </div>
+
+    <div id="3413">
+      <h3>3.4.13. だれが <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <p>Hỏi chủ thể hành động.</p>
+      <div class="example-box">■ だれが この本もって きましたか。</div>
+    </div>
+
+    <div id="3414">
+      <h3>3.4.14. もう／まだ <a href="#index" class="return-link">(Return 3.4)</a></h3>
+      <ul>
+        <li>まだあります：Vẫn còn</li>
+        <li>もうありません：Không còn nữa</li>
+      </ul>
+    </div>
+
+    <div id="35">
+      <h3>3.5 Ngữ pháp ngoài lề</h3>
+      <p><b>3.5.1. Câu + よ:</b> Nhấn mạnh thông tin người nghe chưa biết.</p>
+      <p><b>3.5.2. Câu + ね:</b> Tìm kiếm sự đồng tình.</p>
+    </div>
+
+  </div>
+  <br><br>
+  <a href="../lesson.html" class="return">⬅ Click here to return menu</a>
+</body>
+
+</html>

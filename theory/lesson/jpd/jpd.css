@@ -135,3 +135,36 @@ a {
   font-weight: bold;
   color: #2f4f6f;
 }
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .app {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  /* Grid từ 4 cột -> 2 cột */
+  .lesson-grid-113,
+  .lesson-grid-123 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Bỏ aspect ratio vuông cho đỡ chật */
+  .lesson-grid-113 button,
+  .lesson-grid-123 button {
+    aspect-ratio: auto;
+    height: 70px;
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+}

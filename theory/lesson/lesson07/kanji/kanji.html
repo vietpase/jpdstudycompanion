@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Bài 7 - Kanji</title>
+  <link rel="stylesheet" href="./kanji.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="app">
+    <h1>Kanji</h1>
+
+    <div class="card">
+      <div id="jp"></div>
+      <div id="reading"></div>
+      <div id="meaning" class="hidden"></div>
+    </div>
+
+    <div class="controls">
+      <button onclick="prevWord()">⬅ Previous</button>
+      <button onclick="toggleMeaning()">👁 Meaning</button>
+      <button onclick="nextWord()">➡ Next</button>
+    </div>
+
+    <button class="list-btn" onclick="toggleList()">Display All</button>
+
+    <div id="wordList" class="list hidden">
+      <div class="list-header">
+        <span>#</span>
+        <span>Kanji</span>
+        <span>Romaji</span>
+        <span>Meaning</span>
+      </div>
+    </div>
+
+    <br /><br />
+    <a href="../lesson.html">⬅ Return</a>
+  </div>
+
+  <script src="./kanji.js"></script>
+</body>
+
+</html>

@@ -12,6 +12,12 @@ body {
   padding: 30px;
 }
 
+/* APP */
+.app {
+  max-width: 1100px;
+  margin: auto;
+}
+
 /* TIÊU ĐỀ */
 h1 {
   text-align: center;
@@ -19,15 +25,21 @@ h1 {
   color: #333;
 }
 
+/* WRAPPER CUỘN NGANG */
+.table-wrapper {
+  overflow-x: auto;
+}
+
 /* BẢNG */
 table {
   width: 100%;
+  min-width: 700px; /* quan trọng để không bị co nát */
   border-collapse: collapse;
   background: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* TIÊU ĐỀ CỘT */
+/* HEADER */
 th {
   background: #2f80ed;
   color: white;
@@ -36,7 +48,7 @@ th {
   font-size: 15px;
 }
 
-/* Ô DỮ LIỆU */
+/* CELL */
 td {
   border: 1px solid #ccc;
   padding: 10px;
@@ -61,18 +73,28 @@ tr:hover {
   background: #eef4ff;
 }
 
-/* TÔ MÀU PHẦN QUAN TRỌNG */
-.jp {
-  color: #d6336c; /* tiếng Nhật */
-  font-weight: 500;
+/* LINK */
+a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2f80ed;
 }
 
-.vn {
-  color: #2b8a3e; /* tiếng Việt */
-}
+/* ===================== */
+/* RESPONSIVE MOBILE */
+/* ===================== */
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
   table {
     font-size: 13px;
   }

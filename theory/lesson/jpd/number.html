@@ -1,672 +1,723 @@
 <!doctype html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Đếm trong tiếng Nhật</title>
 
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <title>Đếm trong tiếng Nhật</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    h2 {
+      margin-top: 35px;
+      margin-bottom: 10px;
+      color: #2f80ed;
+    }
+
+    /* NOTE BOX */
+    .note {
+      background: #eef4ff;
+      padding: 10px 15px;
+      border-left: 4px solid #2f80ed;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .note ul {
+      padding-left: 18px;
+    }
+
+    /* WRAPPER CUỘN NGANG */
+    .table-wrapper {
+      overflow-x: auto;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 600px;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th {
+      background: #2f80ed;
+      color: white;
+      padding: 10px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    tr:nth-child(even) {
+      background: #f9fafb;
+    }
+
+    tr:hover {
+      background: #eef4ff;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #2f80ed;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
       body {
-        font-family: Arial, Helvetica, sans-serif;
-        background: #eef2f7;
-        padding: 30px;
-        line-height: 1.6;
+        padding: 12px;
       }
-      .container {
-        max-width: 1200px;
-        margin: auto;
-        background: #fff;
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      }
+
       h1 {
-        text-align: center;
-        color: #1e40af;
-        margin-bottom: 30px;
+        font-size: 20px;
       }
+
       h2 {
-        color: #dc2626;
-        margin: 35px 0 15px;
-        border-left: 6px solid #dc2626;
-        padding-left: 10px;
+        font-size: 16px;
       }
-      .note {
-        background: #eff6ff;
-        border-left: 6px solid #3b82f6;
-        padding: 15px 20px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-      }
-      .note ul {
-        margin-left: 18px;
-      }
-      .footer-note {
-        background: #fff7ed;
-        border-left: 6px solid #f59e0b;
-        padding: 15px 20px;
-        border-radius: 5px;
-        margin: 15px 0;
-      }
+
       table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 25px;
+        font-size: 13px;
       }
+
       th,
       td {
-        border: 1px solid #ccc;
-        padding: 8px;
-        text-align: center;
+        padding: 6px;
       }
-      th {
-        background: #f1f5f9;
-      }
-      tr:nth-child(even) {
-        background: #fafafa;
-      }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
-  <body>
-    <div class="container">
-      <h1>📘 ĐẾM TRONG TIẾNG NHẬT</h1>
+<body>
+  <div class="container">
+    <h1>📘 ĐẾM TRONG TIẾNG NHẬT</h1>
 
-      <!-- I -->
-      <h2>I/ Đếm tháng</h2>
-      <div class="note">
-        <ul>
-          <li>Dùng 月（がつ – gatsu）</li>
-          <li>Đặc biệt: 4・7・9</li>
-          <li>Hỏi: 何月ですか</li>
-        </ul>
-      </div>
-      <table>
-        <tr>
-          <th>#</th>
-          <th>Kanji</th>
-          <th>Hiragana</th>
-          <th>Romaji</th>
-          <th>Meaning</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>一月</td>
-          <td>いちがつ</td>
-          <td>ichigatsu</td>
-          <td>Tháng 1</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>二月</td>
-          <td>にがつ</td>
-          <td>nigatsu</td>
-          <td>Tháng 2</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>三月</td>
-          <td>さんがつ</td>
-          <td>sangatsu</td>
-          <td>Tháng 3</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>四月</td>
-          <td>しがつ</td>
-          <td>shigatsu</td>
-          <td>Tháng 4</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>五月</td>
-          <td>ごがつ</td>
-          <td>gogatsu</td>
-          <td>Tháng 5</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>六月</td>
-          <td>ろくがつ</td>
-          <td>rokugatsu</td>
-          <td>Tháng 6</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>七月</td>
-          <td>しちがつ</td>
-          <td>shichigatsu</td>
-          <td>Tháng 7</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>八月</td>
-          <td>はちがつ</td>
-          <td>hachigatsu</td>
-          <td>Tháng 8</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>九月</td>
-          <td>くがつ</td>
-          <td>kugatsu</td>
-          <td>Tháng 9</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>十月</td>
-          <td>じゅうがつ</td>
-          <td>juugatsu</td>
-          <td>Tháng 10</td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td>十一月</td>
-          <td>じゅういちがつ</td>
-          <td>juuichigatsu</td>
-          <td>Tháng 11</td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td>十二月</td>
-          <td>じゅうにがつ</td>
-          <td>juunigatsu</td>
-          <td>Tháng 12</td>
-        </tr>
-      </table>
-
-      <!-- II -->
-      <h2>II/ Đếm ngày</h2>
-      <div class="note">
-        <ul>
-          <li>1–10 đọc riêng</li>
-          <li>14・20・24 đặc biệt</li>
-          <li>Hỏi: 今日は何日ですか</li>
-        </ul>
-      </div>
-      <table>
-        <tr>
-          <th>#</th>
-          <th>Kanji</th>
-          <th>Hiragana</th>
-          <th>Romaji</th>
-          <th>Meaning</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>一日</td>
-          <td>ついたち</td>
-          <td>tsuitachi</td>
-          <td>Mùng 1</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>二日</td>
-          <td>ふつか</td>
-          <td>futsuka</td>
-          <td>Mùng 2</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>三日</td>
-          <td>みっか</td>
-          <td>mikka</td>
-          <td>Mùng 3</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>四日</td>
-          <td>よっか</td>
-          <td>yokka</td>
-          <td>Mùng 4</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>五日</td>
-          <td>いつか</td>
-          <td>itsuka</td>
-          <td>Mùng 5</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>六日</td>
-          <td>むいか</td>
-          <td>muika</td>
-          <td>Mùng 6</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>七日</td>
-          <td>なのか</td>
-          <td>nanoka</td>
-          <td>Mùng 7</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>八日</td>
-          <td>ようか</td>
-          <td>youka</td>
-          <td>Mùng 8</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>九日</td>
-          <td>ここのか</td>
-          <td>kokonoka</td>
-          <td>Mùng 9</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>十日</td>
-          <td>とおか</td>
-          <td>tooka</td>
-          <td>Mùng 10</td>
-        </tr>
-        <tr>
-          <td>14</td>
-          <td>十四日</td>
-          <td>じゅうよっか</td>
-          <td>juuyokka</td>
-          <td>Ngày 14</td>
-        </tr>
-        <tr>
-          <td>20</td>
-          <td>二十日</td>
-          <td>はつか</td>
-          <td>hatsuka</td>
-          <td>Ngày 20</td>
-        </tr>
-        <tr>
-          <td>24</td>
-          <td>二十四日</td>
-          <td>にじゅうよっか</td>
-          <td>nijuuyokka</td>
-          <td>Ngày 24</td>
-        </tr>
-        <tr>
-          <td>31</td>
-          <td>三十一日</td>
-          <td>さんじゅういちにち</td>
-          <td>sanjuuichinichi</td>
-          <td>Ngày 31</td>
-        </tr>
-      </table>
-
-      <!-- III -->
-      <h2>III/ Ngày trong tuần</h2>
-      <table>
-        <tr>
-          <th>Kanji</th>
-          <th>Romaji</th>
-          <th>Meaning</th>
-        </tr>
-        <tr>
-          <td>日曜日</td>
-          <td>nichiyoubi</td>
-          <td>Chủ nhật</td>
-        </tr>
-        <tr>
-          <td>月曜日</td>
-          <td>getsuyoubi</td>
-          <td>Thứ hai</td>
-        </tr>
-        <tr>
-          <td>火曜日</td>
-          <td>kayoubi</td>
-          <td>Thứ ba</td>
-        </tr>
-        <tr>
-          <td>水曜日</td>
-          <td>suiyoubi</td>
-          <td>Thứ tư</td>
-        </tr>
-        <tr>
-          <td>木曜日</td>
-          <td>mokuyoubi</td>
-          <td>Thứ năm</td>
-        </tr>
-        <tr>
-          <td>金曜日</td>
-          <td>kinyoubi</td>
-          <td>Thứ sáu</td>
-        </tr>
-        <tr>
-          <td>土曜日</td>
-          <td>doyoubi</td>
-          <td>Thứ bảy</td>
-        </tr>
-      </table>
-
-      <!-- IV -->
-      <h2>IV/ Đếm giờ</h2>
-      <div class="note">
-        <ul>
-          <li>Dùng ～時（じ）</li>
-          <li>4・7・9 đọc đặc biệt</li>
-        </ul>
-      </div>
-      <table>
-        <tr>
-          <th>Giờ</th>
-          <th>Kanji</th>
-          <th>Romaji</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>一時</td>
-          <td>ichiji</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>二時</td>
-          <td>niji</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>三時</td>
-          <td>sanj i</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>四時</td>
-          <td>yoji</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>五時</td>
-          <td>goji</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>六時</td>
-          <td>rokuji</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>七時</td>
-          <td>shichiji</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>八時</td>
-          <td>hachiji</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>九時</td>
-          <td>kuji</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>十時</td>
-          <td>juuji</td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td>十一時</td>
-          <td>juuichiji</td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td>十二時</td>
-          <td>juuniji</td>
-        </tr>
-      </table>
-
-      <!-- V -->
-      <h2>V/ Đếm phút</h2>
-      <table>
-        <tr>
-          <th>#</th>
-          <th>Kanji</th>
-          <th>Romaji</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>一分</td>
-          <td>ippun</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>二分</td>
-          <td>nifun</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>三分</td>
-          <td>sanpun</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>四分</td>
-          <td>yonpun</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>五分</td>
-          <td>gofun</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>六分</td>
-          <td>roppun</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>七分</td>
-          <td>nanafun</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>八分</td>
-          <td>happun</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>九分</td>
-          <td>kyuufun</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>十分</td>
-          <td>juppun</td>
-        </tr>
-        <tr>
-          <td>15</td>
-          <td>十五分</td>
-          <td>juugofun</td>
-        </tr>
-        <tr>
-          <td>30</td>
-          <td>三十分</td>
-          <td>sanjuppun</td>
-        </tr>
-      </table>
-
-      <!-- VI -->
-      <h2>VI/ Đếm tuổi</h2>
-      <table>
-        <tr>
-          <th>Tuổi</th>
-          <th>Kanji</th>
-          <th>Romaji</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>一歳</td>
-          <td>issai</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>二歳</td>
-          <td>nisai</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>三歳</td>
-          <td>sansai</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>四歳</td>
-          <td>yonsai</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>五歳</td>
-          <td>gosai</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>六歳</td>
-          <td>rokusai</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>七歳</td>
-          <td>nanasai</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>八歳</td>
-          <td>hassai</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>九歳</td>
-          <td>kyuusai</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>十歳</td>
-          <td>jussai</td>
-        </tr>
-        <tr>
-          <td>20</td>
-          <td>二十歳</td>
-          <td>hatachi</td>
-        </tr>
-      </table>
-
-      <!-- VII -->
-      <h2>VII/ Đếm tầng</h2>
-      <table>
-        <tr>
-          <th>Tầng</th>
-          <th>Kanji</th>
-          <th>Romaji</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>一階</td>
-          <td>ikkai</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>二階</td>
-          <td>nikai</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>三階</td>
-          <td>sangai</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>四階</td>
-          <td>yonkai</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>五階</td>
-          <td>gokai</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>六階</td>
-          <td>rokkai</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>七階</td>
-          <td>nanakai</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>八階</td>
-          <td>hakkai</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>九階</td>
-          <td>kyuukai</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>十階</td>
-          <td>jukkai</td>
-        </tr>
-      </table>
-
-      <!-- VIII -->
-      <h2>VIII/ Đếm số lớn</h2>
-      <table>
-        <tr>
-          <th>#</th>
-          <th>Kanji</th>
-          <th>Romaji</th>
-        </tr>
-        <tr>
-          <td>100</td>
-          <td>百</td>
-          <td>hyaku</td>
-        </tr>
-        <tr>
-          <td>300</td>
-          <td>三百</td>
-          <td>sanbyaku</td>
-        </tr>
-        <tr>
-          <td>600</td>
-          <td>六百</td>
-          <td>roppyaku</td>
-        </tr>
-        <tr>
-          <td>800</td>
-          <td>八百</td>
-          <td>happyaku</td>
-        </tr>
-        <tr>
-          <td>1,000</td>
-          <td>千</td>
-          <td>sen</td>
-        </tr>
-        <tr>
-          <td>10,000</td>
-          <td>一万</td>
-          <td>ichiman</td>
-        </tr>
-        <tr>
-          <td>100,000</td>
-          <td>十万</td>
-          <td>juuman</td>
-        </tr>
-        <tr>
-          <td>1,000,000</td>
-          <td>百万</td>
-          <td>hyakuman</td>
-        </tr>
-        <tr>
-          <td>10,000,000</td>
-          <td>千万</td>
-          <td>senman</td>
-        </tr>
-      </table>
+    <!-- I -->
+    <h2>I/ Đếm tháng</h2>
+    <div class="note">
+      <ul>
+        <li>Dùng 月（がつ – gatsu）</li>
+        <li>Đặc biệt: 4・7・9</li>
+        <li>Hỏi: 何月ですか</li>
+      </ul>
     </div>
-    <a href="./jpd113.html">⬅ Return</a>
-  </body>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Kanji</th>
+        <th>Hiragana</th>
+        <th>Romaji</th>
+        <th>Meaning</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>一月</td>
+        <td>いちがつ</td>
+        <td>ichigatsu</td>
+        <td>Tháng 1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>二月</td>
+        <td>にがつ</td>
+        <td>nigatsu</td>
+        <td>Tháng 2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>三月</td>
+        <td>さんがつ</td>
+        <td>sangatsu</td>
+        <td>Tháng 3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>四月</td>
+        <td>しがつ</td>
+        <td>shigatsu</td>
+        <td>Tháng 4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>五月</td>
+        <td>ごがつ</td>
+        <td>gogatsu</td>
+        <td>Tháng 5</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>六月</td>
+        <td>ろくがつ</td>
+        <td>rokugatsu</td>
+        <td>Tháng 6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>七月</td>
+        <td>しちがつ</td>
+        <td>shichigatsu</td>
+        <td>Tháng 7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>八月</td>
+        <td>はちがつ</td>
+        <td>hachigatsu</td>
+        <td>Tháng 8</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>九月</td>
+        <td>くがつ</td>
+        <td>kugatsu</td>
+        <td>Tháng 9</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>十月</td>
+        <td>じゅうがつ</td>
+        <td>juugatsu</td>
+        <td>Tháng 10</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>十一月</td>
+        <td>じゅういちがつ</td>
+        <td>juuichigatsu</td>
+        <td>Tháng 11</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>十二月</td>
+        <td>じゅうにがつ</td>
+        <td>juunigatsu</td>
+        <td>Tháng 12</td>
+      </tr>
+    </table>
+
+    <!-- II -->
+    <h2>II/ Đếm ngày</h2>
+    <div class="note">
+      <ul>
+        <li>1–10 đọc riêng</li>
+        <li>14・20・24 đặc biệt</li>
+        <li>Hỏi: 今日は何日ですか</li>
+      </ul>
+    </div>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Kanji</th>
+        <th>Hiragana</th>
+        <th>Romaji</th>
+        <th>Meaning</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>一日</td>
+        <td>ついたち</td>
+        <td>tsuitachi</td>
+        <td>Mùng 1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>二日</td>
+        <td>ふつか</td>
+        <td>futsuka</td>
+        <td>Mùng 2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>三日</td>
+        <td>みっか</td>
+        <td>mikka</td>
+        <td>Mùng 3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>四日</td>
+        <td>よっか</td>
+        <td>yokka</td>
+        <td>Mùng 4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>五日</td>
+        <td>いつか</td>
+        <td>itsuka</td>
+        <td>Mùng 5</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>六日</td>
+        <td>むいか</td>
+        <td>muika</td>
+        <td>Mùng 6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>七日</td>
+        <td>なのか</td>
+        <td>nanoka</td>
+        <td>Mùng 7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>八日</td>
+        <td>ようか</td>
+        <td>youka</td>
+        <td>Mùng 8</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>九日</td>
+        <td>ここのか</td>
+        <td>kokonoka</td>
+        <td>Mùng 9</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>十日</td>
+        <td>とおか</td>
+        <td>tooka</td>
+        <td>Mùng 10</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>十四日</td>
+        <td>じゅうよっか</td>
+        <td>juuyokka</td>
+        <td>Ngày 14</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>二十日</td>
+        <td>はつか</td>
+        <td>hatsuka</td>
+        <td>Ngày 20</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>二十四日</td>
+        <td>にじゅうよっか</td>
+        <td>nijuuyokka</td>
+        <td>Ngày 24</td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>三十一日</td>
+        <td>さんじゅういちにち</td>
+        <td>sanjuuichinichi</td>
+        <td>Ngày 31</td>
+      </tr>
+    </table>
+
+    <!-- III -->
+    <h2>III/ Ngày trong tuần</h2>
+    <table>
+      <tr>
+        <th>Kanji</th>
+        <th>Romaji</th>
+        <th>Meaning</th>
+      </tr>
+      <tr>
+        <td>日曜日</td>
+        <td>nichiyoubi</td>
+        <td>Chủ nhật</td>
+      </tr>
+      <tr>
+        <td>月曜日</td>
+        <td>getsuyoubi</td>
+        <td>Thứ hai</td>
+      </tr>
+      <tr>
+        <td>火曜日</td>
+        <td>kayoubi</td>
+        <td>Thứ ba</td>
+      </tr>
+      <tr>
+        <td>水曜日</td>
+        <td>suiyoubi</td>
+        <td>Thứ tư</td>
+      </tr>
+      <tr>
+        <td>木曜日</td>
+        <td>mokuyoubi</td>
+        <td>Thứ năm</td>
+      </tr>
+      <tr>
+        <td>金曜日</td>
+        <td>kinyoubi</td>
+        <td>Thứ sáu</td>
+      </tr>
+      <tr>
+        <td>土曜日</td>
+        <td>doyoubi</td>
+        <td>Thứ bảy</td>
+      </tr>
+    </table>
+
+    <!-- IV -->
+    <h2>IV/ Đếm giờ</h2>
+    <div class="note">
+      <ul>
+        <li>Dùng ～時（じ）</li>
+        <li>4・7・9 đọc đặc biệt</li>
+      </ul>
+    </div>
+    <table>
+      <tr>
+        <th>Giờ</th>
+        <th>Kanji</th>
+        <th>Romaji</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>一時</td>
+        <td>ichiji</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>二時</td>
+        <td>niji</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>三時</td>
+        <td>sanj i</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>四時</td>
+        <td>yoji</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>五時</td>
+        <td>goji</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>六時</td>
+        <td>rokuji</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>七時</td>
+        <td>shichiji</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>八時</td>
+        <td>hachiji</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>九時</td>
+        <td>kuji</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>十時</td>
+        <td>juuji</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>十一時</td>
+        <td>juuichiji</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>十二時</td>
+        <td>juuniji</td>
+      </tr>
+    </table>
+
+    <!-- V -->
+    <h2>V/ Đếm phút</h2>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Kanji</th>
+        <th>Romaji</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>一分</td>
+        <td>ippun</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>二分</td>
+        <td>nifun</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>三分</td>
+        <td>sanpun</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>四分</td>
+        <td>yonpun</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>五分</td>
+        <td>gofun</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>六分</td>
+        <td>roppun</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>七分</td>
+        <td>nanafun</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>八分</td>
+        <td>happun</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>九分</td>
+        <td>kyuufun</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>十分</td>
+        <td>juppun</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>十五分</td>
+        <td>juugofun</td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>三十分</td>
+        <td>sanjuppun</td>
+      </tr>
+    </table>
+
+    <!-- VI -->
+    <h2>VI/ Đếm tuổi</h2>
+    <table>
+      <tr>
+        <th>Tuổi</th>
+        <th>Kanji</th>
+        <th>Romaji</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>一歳</td>
+        <td>issai</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>二歳</td>
+        <td>nisai</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>三歳</td>
+        <td>sansai</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>四歳</td>
+        <td>yonsai</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>五歳</td>
+        <td>gosai</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>六歳</td>
+        <td>rokusai</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>七歳</td>
+        <td>nanasai</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>八歳</td>
+        <td>hassai</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>九歳</td>
+        <td>kyuusai</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>十歳</td>
+        <td>jussai</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>二十歳</td>
+        <td>hatachi</td>
+      </tr>
+    </table>
+
+    <!-- VII -->
+    <h2>VII/ Đếm tầng</h2>
+    <table>
+      <tr>
+        <th>Tầng</th>
+        <th>Kanji</th>
+        <th>Romaji</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>一階</td>
+        <td>ikkai</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>二階</td>
+        <td>nikai</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>三階</td>
+        <td>sangai</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>四階</td>
+        <td>yonkai</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>五階</td>
+        <td>gokai</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>六階</td>
+        <td>rokkai</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>七階</td>
+        <td>nanakai</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>八階</td>
+        <td>hakkai</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>九階</td>
+        <td>kyuukai</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>十階</td>
+        <td>jukkai</td>
+      </tr>
+    </table>
+
+    <!-- VIII -->
+    <h2>VIII/ Đếm số lớn</h2>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Kanji</th>
+        <th>Romaji</th>
+      </tr>
+      <tr>
+        <td>100</td>
+        <td>百</td>
+        <td>hyaku</td>
+      </tr>
+      <tr>
+        <td>300</td>
+        <td>三百</td>
+        <td>sanbyaku</td>
+      </tr>
+      <tr>
+        <td>600</td>
+        <td>六百</td>
+        <td>roppyaku</td>
+      </tr>
+      <tr>
+        <td>800</td>
+        <td>八百</td>
+        <td>happyaku</td>
+      </tr>
+      <tr>
+        <td>1,000</td>
+        <td>千</td>
+        <td>sen</td>
+      </tr>
+      <tr>
+        <td>10,000</td>
+        <td>一万</td>
+        <td>ichiman</td>
+      </tr>
+      <tr>
+        <td>100,000</td>
+        <td>十万</td>
+        <td>juuman</td>
+      </tr>
+      <tr>
+        <td>1,000,000</td>
+        <td>百万</td>
+        <td>hyakuman</td>
+      </tr>
+      <tr>
+        <td>10,000,000</td>
+        <td>千万</td>
+        <td>senman</td>
+      </tr>
+    </table>
+  </div>
+  <a href="./jpd113.html">⬅ Return</a>
+</body>
+
 </html>
