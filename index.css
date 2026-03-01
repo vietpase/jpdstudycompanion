@@ -156,3 +156,9 @@ button:active {
     padding: 8px 10px;
   }
 }
+
+.survey{
+  color: #2f4f6f;
+  margin-bottom: 14px;
+  text-decoration: none;
+}
